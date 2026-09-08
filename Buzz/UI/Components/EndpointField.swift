@@ -63,7 +63,7 @@ struct EndpointField: View {
 #Preview(traits: .sizeThatFitsLayout) {
     VStack(spacing: 16) {
         EndpointField(url: URL(string: "https://ping.buzzkit.dev/bz_7fk2m9xq4p3wnd8vhs2kzq")!)
-        EndpointField(url: URL(string: "http://100.102.32.85:8792/bz_7fk2m9xq4p3wnd8vhs2kzq")!)
+        EndpointField(url: URL(string: "http://localhost:8792/bz_7fk2m9xq4p3wnd8vhs2kzq")!)
     }
     .padding(24)
 }

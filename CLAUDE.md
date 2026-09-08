@@ -287,9 +287,14 @@ device and the Lock Screen view through the preview.
 | Command | Description |
 |---|---|
 | `xcodebuild -project Buzz.xcodeproj -scheme Buzz -destination 'generic/platform=iOS Simulator' -configuration Debug CODE_SIGN_IDENTITY=- build` | Build |
-| `xcodebuild -project Buzz.xcodeproj -scheme Buzz -destination 'platform=iOS,id=<udid>' -configuration Debug -allowProvisioningUpdates -derivedDataPath build-device build && xcrun devicectl device install app --device <udid> build-device/Build/Products/Debug-iphoneos/Buzz.app && xcrun devicectl device process launch --device <udid> studio.overclock.buzz` | Run on Christo's iPhone (`xcrun devicectl list devices` for the udid) |
+| `xcodebuild -project Buzz.xcodeproj -scheme Buzz -destination 'platform=iOS,id=<udid>' -configuration Debug -allowProvisioningUpdates -derivedDataPath build-device build && xcrun devicectl device install app --device <udid> build-device/Build/Products/Debug-iphoneos/Buzz.app && xcrun devicectl device process launch --device <udid> studio.overclock.buzz` | Run on a connected iPhone (`xcrun devicectl list devices` for the udid) |
 
 Prefix with `DEVELOPER_DIR=/Applications/Xcode-27.app` when `xcrun` resolves to CommandLineTools.
+
+Debug builds talk to `http://localhost:8792` (`PingEnvironment.local`); set `BUZZ_PING_URL` in the
+scheme's environment to point a physical device at the Mac running `apps/ping`, and add that host
+to `NSExceptionDomains` locally, without committing it. The repository is public and carries no
+machine addresses. Release builds always use `https://ping.buzzkit.dev`.
 
 `Buzz.xcodeproj` is the source of truth and is committed: add files through Xcode (or edit
 `project.pbxproj` when working from the shell, and confirm the file appears in the target), and

@@ -26,14 +26,6 @@
 	<dict>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>100.102.32.85</key>
-			<dict>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-		</dict>
 	</dict>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>Connect to your development Mac to set up Buzz.</string>

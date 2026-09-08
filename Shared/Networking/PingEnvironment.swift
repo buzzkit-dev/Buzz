@@ -2,7 +2,7 @@ import Foundation
 
 public enum PingEnvironment {
     public static let production = URL(string: "https://ping.buzzkit.dev")!
-    public static let local = URL(string: "http://100.102.32.85:8792")!
+    public static let local = URL(string: "http://localhost:8792")!
 
     public static var host: URL {
         #if DEBUG
