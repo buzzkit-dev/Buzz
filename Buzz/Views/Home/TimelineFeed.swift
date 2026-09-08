@@ -32,6 +32,7 @@ struct TimelineFeed: View {
                         .overlay(shape.strokeBorder(Theme.inkForeground.opacity(0.08), lineWidth: 1))
                         .shadow(color: Theme.shadow.opacity(0.5), radius: 7, y: 6)
                         .transition(.opacity.combined(with: .scale(scale: 0.95)))
+                        .zIndex(1)
                 }
                 ForEach(visibleEvents) { event in
                     TimelineCard(event: event)
