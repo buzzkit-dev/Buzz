@@ -5,7 +5,7 @@
   </a>
 
   <h3 align="center">Buzz</h3>
-  <b>What your coding agents are doing, on your Lock Screen</b>
+  <b>Notifications and Live Activities from your coding agents</b>
 </div>
 
 <!-- TOC -->
