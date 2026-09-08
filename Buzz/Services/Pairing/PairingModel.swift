@@ -69,7 +69,7 @@ final class PairingModel {
             }
         #endif
 
-        guard BuzzStore.isPaired, let stored = BuzzStore.endpoint else {
+        guard BuzzStore.isPaired, let stored = BuzzStore.endpoint, BuzzStore.identity?.identityHash != nil else {
             phase = .unpaired
             await pair()
             return

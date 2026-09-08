@@ -361,7 +361,9 @@ slots retain stable identity and use numericText during automatic refresh. The c
 links to the public skill instructions so a new agent knows how to claim the code and set up Buzz.
 
 Startup opens Connect an agent immediately, restoring the existing endpoint or creating one in
-place. Pairing failures show a retry inline. The Get started onboarding screen has been removed.
+place. A stored identity without an `identityHash` counts as unpaired: the buzzkit tenant requires
+verified identities, the hash is only ever handed out by `POST /pair`, and rotating the key does not
+refresh it, so `restore()` pairs again (new endpoint, agents re-claim) instead of running unverified. Pairing failures show a retry inline. The Get started onboarding screen has been removed.
 Main CTA uses CruiseSignal lg: 54pt height and 22pt text (md is 50pt / 20pt).
 In Debug builds on real devices, More → Preview Screens opens an isolated sample model without
 network access. Its More menu offers idle, working, waiting, notifications-off and connecting

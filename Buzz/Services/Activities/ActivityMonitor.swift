@@ -34,6 +34,12 @@ final class ActivityMonitor {
     func reconcile() async {
         guard !previewing, let client = PingClient.paired() else { return }
         guard let snapshot = try? await client.snapshot() else { return }
+        #if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("-BuzzMirrorSnapshot") {
+                state = snapshot.activity.isQuiet ? nil : snapshot.activity
+                return
+            }
+        #endif
         let local = Activity<BuzzActivityAttributes>.activities
 
         for activity in local {
