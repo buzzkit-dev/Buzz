@@ -1,7 +1,7 @@
 <!-- Header -->
 <div align="center">
   <a href="https://buzzkit.dev/buzz">
-    <img src="https://buzzkit.dev/buzz/icon.png" alt="Buzz" height="96" />
+    <img src=".github/assets/icon.png" alt="Buzz" height="96" />
   </a>
 
   <h3 align="center">Buzz</h3>
@@ -82,4 +82,4 @@ BuzzNotificationService/  Turns each push into a communication notification (the
 
 ## License
 
-Buzz is part of [BuzzKit](https://github.com/buzzkit-dev/buzzkit), licensed under the [GNU Affero General Public License Version 3 (AGPLv3)](https://github.com/buzzkit-dev/buzzkit/blob/main/LICENSE).
+The Buzz app is licensed under the [MIT License](LICENSE). The BuzzKit framework it is built on is [AGPLv3](https://github.com/buzzkit-dev/buzzkit/blob/main/LICENSE).

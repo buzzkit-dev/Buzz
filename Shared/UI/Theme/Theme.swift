@@ -26,7 +26,7 @@ public enum Theme {
     public static let brand1 = dynamic(light: 0xEEF2FF, dark: 0x0F1339)
     public static let brand2 = dynamic(light: 0xD9E3FF, dark: 0x171D53)
 
-    public static let ink = solid(0x17181C)
+    public static let ink = dynamic(light: 0x17181C, dark: 0x030304)
     public static let inkForeground = Color.white
 
     public static let ring = dynamic(light: 0x000000, dark: 0x232326, lightAlpha: 0.06, darkAlpha: 1)

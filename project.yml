@@ -145,3 +145,7 @@ schemes:
       config: Debug
       targets:
         - BuzzUITests
+    profile:
+      config: Release
+    archive:
+      config: Release

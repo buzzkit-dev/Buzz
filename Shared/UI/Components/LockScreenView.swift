@@ -39,7 +39,8 @@ public struct SessionRows: View {
     }
 
     private var shown: Int {
-        state.sessions.count + state.overflow > limit ? limit - 1 : limit
+        if island { return min(state.sessions.count, 2) }
+        return state.sessions.count + state.overflow > limit ? limit - 1 : limit
     }
 
     private var hidden: Int {
