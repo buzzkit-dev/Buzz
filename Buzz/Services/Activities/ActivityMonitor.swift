@@ -75,16 +75,14 @@ final class ActivityMonitor {
     }
 }
 
-#if DEBUG
-    extension ActivityMonitor {
-        static var livePreview: ActivityMonitor {
-            let monitor = ActivityMonitor()
-            monitor.state = BuzzSamples.many
-            return monitor
-        }
-
-        static var idlePreview: ActivityMonitor {
-            ActivityMonitor()
-        }
+extension ActivityMonitor {
+    static var livePreview: ActivityMonitor {
+        let monitor = ActivityMonitor()
+        monitor.state = BuzzSamples.many
+        return monitor
     }
-#endif
+
+    static var idlePreview: ActivityMonitor {
+        ActivityMonitor()
+    }
+}

@@ -26,7 +26,7 @@
 
 Buzz gives your phone one endpoint your coding agents post to. They send a notification when work finishes, keep a Live Activity on your Lock Screen while it runs, and flag when they are blocked and need you. Several agents running at once merge into one live view, sorted by whichever one needs you first.
 
-Buzz reports; it never acts for you. When an agent is blocked it shows "Waiting on you" and you make the call where you always have, in your editor. There is no account and nothing to install on the machine running the agent: it reads one setup guide, claims a six-digit code, and starts posting.
+Buzz reports; it never acts for you. When an agent is blocked it shows "Waiting on you" and you make the call where you always have, in your editor. There is no account and nothing to install on the machine running the agent: it reads one setup guide, claims a six-digit code, and starts posting. Anything else that can make an HTTP request, a CI job or a shell script, can use the same endpoint.
 
 Buzz is a product built on [BuzzKit](https://buzzkit.dev), the open source notification framework, on the same public SDK anyone else would use. Get it at [buzzkit.dev/buzz](https://buzzkit.dev/buzz).
 
@@ -46,7 +46,7 @@ curl -X POST https://ping.buzzkit.dev/YOUR_KEY \
   -d '{"session":"api/migrate","title":"Running migrations","progress":0.4,"status":"working"}'
 ```
 
-Set `status` to `waiting` when you are blocked, and it floats to the top of the Lock Screen as "Waiting on you". The full agent guide lives at [`ping.buzzkit.dev/skill.md`](https://ping.buzzkit.dev/skill.md).
+Set `status` to `waiting` when the agent is blocked, and it floats to the top of the Lock Screen as "Waiting on you". The `agent` field puts that agent's avatar on the notification. The full agent guide lives at [`ping.buzzkit.dev/skill.md`](https://ping.buzzkit.dev/skill.md).
 
 ## How It Fits Together
 
@@ -61,14 +61,13 @@ The app pairs with the API once and stores its credentials in the Keychain. From
 
 ## Building
 
-Requires Xcode 27 and [XcodeGen](https://github.com/yonaskolb/XcodeGen).
+Requires Xcode 27.
 
 ```sh
-xcodegen generate
 open Buzz.xcodeproj
 ```
 
-`Buzz.xcodeproj` is generated from `project.yml`, so it is not checked in — edit targets, entitlements and build settings in `project.yml` and regenerate. Run `xcodegen generate` again whenever files are added.
+The project expects the [BuzzKit iOS SDK](https://github.com/buzzkit-dev/buzzkit-ios) checked out next to it at `../BuzzKit-iOS`; targets, entitlements and build settings live in the project itself.
 
 ```
 Buzz/                     The app: pairing, the timeline, the connect screen

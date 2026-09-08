@@ -1,10 +1,10 @@
 .DS_Store
 build/
+build-device/
+build-release/
 DerivedData/
-*.xcodeproj
-*.xcworkspace
+/*.xcworkspace
 xcuserdata/
 *.xcuserstate
 .swiftpm/
 Packages/
-build-device/

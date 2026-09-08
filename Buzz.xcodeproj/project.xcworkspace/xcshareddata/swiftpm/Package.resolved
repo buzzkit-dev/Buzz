@@ -1,0 +1,15 @@
+{
+  "originHash" : "c03451fada920f6e281f8d64f652eab8f681e6b9e98674378609e07c0a12bc78",
+  "pins" : [
+    {
+      "identity" : "bezelkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/markbattistella/BezelKit",
+      "state" : {
+        "revision" : "a2cb1548f6ae11f3d9b8f63c1b260c6cc75c62bb",
+        "version" : "4.1.1"
+      }
+    }
+  ],
+  "version" : 3
+}

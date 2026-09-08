@@ -15,7 +15,7 @@ lives at `buzzkit.dev/buzz`. This repository is only the app.
 ## Structure
 
 ```
-project.yml              xcodegen manifest — the source of truth; Buzz.xcodeproj is generated and git-ignored
+Buzz.xcodeproj           The project, checked in; targets, entitlements and settings are edited in Xcode
 Shared/                  compiled into BOTH targets (the app and the widget extension)
   Activity/
     BuzzActivityAttributes.swift  The wire contract with the server. See "The wire contract" below
@@ -286,15 +286,19 @@ device and the Lock Screen view through the preview.
 
 | Command | Description |
 |---|---|
-| `xcodegen generate` | Regenerate `Buzz.xcodeproj` after touching `project.yml` or adding files |
 | `xcodebuild -project Buzz.xcodeproj -scheme Buzz -destination 'generic/platform=iOS Simulator' -configuration Debug CODE_SIGN_IDENTITY=- build` | Build |
 | `xcodebuild -project Buzz.xcodeproj -scheme Buzz -destination 'platform=iOS,id=<udid>' -configuration Debug -allowProvisioningUpdates -derivedDataPath build-device build && xcrun devicectl device install app --device <udid> build-device/Build/Products/Debug-iphoneos/Buzz.app && xcrun devicectl device process launch --device <udid> studio.overclock.buzz` | Run on Christo's iPhone (`xcrun devicectl list devices` for the udid) |
 
 Prefix with `DEVELOPER_DIR=/Applications/Xcode-27.app` when `xcrun` resolves to CommandLineTools.
 
-The team (`DEVELOPMENT_TEAM: 5DL44U5BHU`, automatic signing) lives in `project.yml` so
-`xcodegen generate` never resets it; never set the team in Xcode alone, it is lost on the next
-generate.
+`Buzz.xcodeproj` is the source of truth and is committed: add files through Xcode (or edit
+`project.pbxproj` when working from the shell, and confirm the file appears in the target), and
+keep the team (`5DL44U5BHU`, automatic signing) set on every target. The local BuzzKit package
+is referenced at `../BuzzKit-iOS`. The version and build number live once, at the project level
+(`MARKETING_VERSION`, `CURRENT_PROJECT_VERSION` in the Buzz project's Build Settings); every
+Info.plist reads them through `$(MARKETING_VERSION)` / `$(CURRENT_PROJECT_VERSION)`, so the app
+and both extensions always agree. Bump them on the project, never on one target, or App Store
+Connect rejects the upload for an extension version that does not match the app.
 
 Loading states use `Spinner` (the CruiseSignal ring: 30% track plus a quarter arc, 900ms per
 turn), never `ProgressView`. Inside `AppButton` the spinner takes the exact size of the icon slot

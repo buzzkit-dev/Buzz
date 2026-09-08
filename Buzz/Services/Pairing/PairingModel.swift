@@ -231,19 +231,17 @@ final class PairingModel {
     }
 }
 
-#if DEBUG
-    extension PairingModel {
-        static let sampleEndpoint = URL(string: "https://ping.buzzkit.dev/bz_7fk2m9xq4p3wnd8vhs2kzq")
-        static let sampleCode = "482913"
+extension PairingModel {
+    static let sampleEndpoint = URL(string: "https://ping.buzzkit.dev/bz_7fk2m9xq4p3wnd8vhs2kzq")
+    static let sampleCode = "482913"
 
-        static var pairedPreview: PairingModel {
-            let model = PairingModel()
-            model.isPreview = true
-            model.endpoint = sampleEndpoint
-            model.code = sampleCode
-            model.codeExpiresAt = .now.addingTimeInterval(299)
-            model.phase = .paired
-            return model
-        }
+    static var pairedPreview: PairingModel {
+        let model = PairingModel()
+        model.isPreview = true
+        model.endpoint = sampleEndpoint
+        model.code = sampleCode
+        model.codeExpiresAt = .now.addingTimeInterval(299)
+        model.phase = .paired
+        return model
     }
-#endif
+}

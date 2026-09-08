@@ -1,0 +1,1125 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000D5BFD28BBA429F42376D9 /* Unchecked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BF05B08F542B190E1FF845 /* Unchecked.swift */; };
+		00981C2C08B4BFE5F7F3F2EF /* AgentAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E62D69878CF11B15153E1 /* AgentAvatar.swift */; };
+		0176DC93FF9D21FECD032602 /* AgentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51643D6B3B472A9249B18FBF /* AgentLabel.swift */; };
+		02277D1CC3DF826F128681E8 /* TimelineEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B839A5195545B1EDE8DBF /* TimelineEvent.swift */; };
+		0587DE962C2561457C97B866 /* AvatarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00527D3F9977C9FEEE1AF45A /* AvatarStore.swift */; };
+		0616D50066B55D8F627CB7B4 /* Agents.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332D908E59BA2AEE8B5EDD13 /* Agents.xcassets */; };
+		085B391635E10913168BB1D0 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68465035E7AF9F8154BC5B55 /* Spinner.swift */; };
+		0AA9C7EF4B9209A25187BBF2 /* OpenRunde-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1168EB78919D67B3E63C6FDA /* OpenRunde-Regular.otf */; };
+		0CC8DFFE916F2624365C8024 /* TimelineFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831854AC4A3B217C2BBE90C7 /* TimelineFeed.swift */; };
+		138C6110368542354A21902E /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958E0F6E0937081E52999C75 /* Icons.xcassets */; };
+		1A59C446FA1658EAFAA11CD3 /* BezelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2CCCFEEA7114D516622AC3A0 /* BezelKit */; };
+		1DC726324FE01D7A295D4CE0 /* BuzzSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA1DEA8B2FF2DF513116585 /* BuzzSamples.swift */; };
+		28D44208EA7DEFC492AF0785 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6538DF7EEBCBD95E726D0313 /* NotificationService.swift */; };
+		30482A0F2ADC5CB8E1130557 /* PingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE128E811F90908D752B5 /* PingClient.swift */; };
+		31655EDF6E65E522A3AB8A51 /* Agents.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332D908E59BA2AEE8B5EDD13 /* Agents.xcassets */; };
+		32AE1D313FFA93F7DE431F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D784EC03128BAF35539DFB /* Assets.xcassets */; };
+		33F7B4E62F3114ED1A20FD8C /* MobileLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE59CCF6074D8EE34B90FAF8 /* MobileLayoutTests.swift */; };
+		3621CE620D6D492508E79F8E /* OpenRunde-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBFBBEEDC1A89CCE56D589F7 /* OpenRunde-Semibold.otf */; };
+		363FB187B3DF4CB5B25EB570 /* BuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD6403C7734C8E9D612427C /* BuzzApp.swift */; };
+		3912BCD08CF3F02CF264DBE4 /* AgentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51643D6B3B472A9249B18FBF /* AgentLabel.swift */; };
+		3F329655FBD6BE32A7BC2B0E /* Agents.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332D908E59BA2AEE8B5EDD13 /* Agents.xcassets */; };
+		40F88B33D523EA7D2A61BA98 /* ConnectionIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFFD9DB707B897640983BD /* ConnectionIssue.swift */; };
+		43600817B6FAAB98EBB5C072 /* EndpointSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104B2F3216333FF1507F570C /* EndpointSheet.swift */; };
+		47EFB18291F1819BBCA5EC8C /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEFD2683F86888B94EF910E /* Typography.swift */; };
+		49A52C73B1269736C915D059 /* AppSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B30C5638A5C721166AC9B /* AppSheet.swift */; };
+		4F5D493B326DD15343EEFFFD /* BuzzKit in Frameworks */ = {isa = PBXBuildFile; productRef = 764D6F50A5870A9BD8CAC591 /* BuzzKit */; };
+		51BFE0809CDE992EBE5A0131 /* OpenRunde-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEDC5D4E6E1C5BC0B030B29E /* OpenRunde-Medium.otf */; };
+		538454E361DACAB711D90EBE /* PingEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B7C535516E73EEC33254C /* PingEnvironment.swift */; };
+		562CC4C314BDEFCDA947C143 /* AvatarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00527D3F9977C9FEEE1AF45A /* AvatarStore.swift */; };
+		56BF269FC209A3F5F3CC48AD /* ActivityBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB7F509DFCFD723A48442A /* ActivityBinder.swift */; };
+		5A2FF41EB518D21F33C3357E /* StageNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A5D05D463DC39C9C82554 /* StageNotice.swift */; };
+		5C41A36722748E135426321E /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE46C1C84A1FBB93C86A88 /* LockScreenView.swift */; };
+		5F020352957EB4B6D3313187 /* BuzzNotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C7D0F841AABEA3F80702F571 /* BuzzNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		60C94E979403B862C0A3C2AD /* BuzzWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28081450B72674B657873F2 /* BuzzWidgetBundle.swift */; };
+		62C87A19136221D4EC25008C /* ActivityPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B95A162682756EA3DB48E /* ActivityPreviewView.swift */; };
+		63C07FBF31646ED34FE57872 /* LiveDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CB14549F4FF95ABFC17028 /* LiveDot.swift */; };
+		73D5E7AD04734E74A96F85D2 /* AgentAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E62D69878CF11B15153E1 /* AgentAvatar.swift */; };
+		77D5C5DC264F16ADC3C07084 /* OpenRunde-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1168EB78919D67B3E63C6FDA /* OpenRunde-Regular.otf */; };
+		7B6DF9E7E0F7AD736B7E57E9 /* PairingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455F59A24A3F614E3A376D0 /* PairingModel.swift */; };
+		812302EA04D47DAA7224FCA2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38DDFD86E242D3DAB7D561 /* Theme.swift */; };
+		83D6AC23680E40FEB27BBF4A /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEFD2683F86888B94EF910E /* Typography.swift */; };
+		83EC2FA8BDC57F2190CA9F0F /* CodeDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1977FE3C0458F5AD80DB9E2 /* CodeDigits.swift */; };
+		8A8D403626C1B1BA5576C6F4 /* OpenRunde-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBFBBEEDC1A89CCE56D589F7 /* OpenRunde-Semibold.otf */; };
+		8B122BDC4977FF557C1CF01B /* PingEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B7C535516E73EEC33254C /* PingEnvironment.swift */; };
+		8BF5227F0426E537E654279A /* PingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE128E811F90908D752B5 /* PingClient.swift */; };
+		8C1F2D708EBD8F266A389B72 /* BuzzStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E56F98215D63CD0659400 /* BuzzStore.swift */; };
+		9062A7E72992E22A1FCC533E /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FCAE4D6969B796DBAC0BD /* AppButton.swift */; };
+		93AF1B8E652E8EBCAB674604 /* BuzzKitNotificationServiceExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 0710995FC34B438EF06BFE0E /* BuzzKitNotificationServiceExtension */; };
+		954EEAED03F6FAF7923CFDAE /* Unchecked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BF05B08F542B190E1FF845 /* Unchecked.swift */; };
+		96D50A7FAC88C90EA14BEA66 /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE46C1C84A1FBB93C86A88 /* LockScreenView.swift */; };
+		A351FA2A6AAA86AAD73D5382 /* TimelineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F098DE49A31D539CDD6A3CC /* TimelineCard.swift */; };
+		A3ACE73D90C9C9454CF5839E /* BuzzActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5CA261F9A5F15A1EA5DAD /* BuzzActivityAttributes.swift */; };
+		A78EB0A8E6B00F5FCCECD4B1 /* BuzzWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7A1E446FDEB4E56F43B09BD5 /* BuzzWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A851CDBE12320EEB18EF4809 /* BuzzStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E56F98215D63CD0659400 /* BuzzStore.swift */; };
+		AF25C9E13CC2A953BBDC3E0C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041EE1C7DF1379AED2310F5 /* HomeView.swift */; };
+		B33A68058CB64D76F153F84A /* TimelineEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B839A5195545B1EDE8DBF /* TimelineEvent.swift */; };
+		B446F5E75B2F83B671EDD2BE /* StatusIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A39AA821544698652ADBC /* StatusIndicators.swift */; };
+		B4A13A70AB7339E02D10C88E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97334460B24737F1F62FA1 /* ContentView.swift */; };
+		B9169B8097EE2CE2A83769A4 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86838E03D3ED08F344C47CC6 /* Stage.swift */; };
+		BC135984E3B51E78A9C26394 /* ScreenPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E4DE55E189CE2A5D64A430 /* ScreenPreviewView.swift */; };
+		BDFE5E41B520D18578A70B79 /* BuzzActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5CA261F9A5F15A1EA5DAD /* BuzzActivityAttributes.swift */; };
+		C71168A4749B1C25DFFEA281 /* AvatarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00527D3F9977C9FEEE1AF45A /* AvatarStore.swift */; };
+		C96C39A0E79B61C12179FCA8 /* AgentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51643D6B3B472A9249B18FBF /* AgentLabel.swift */; };
+		CCE17B3A0E02CBE98FED3B3F /* NotificationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906809AE5FE3E000E0699C88 /* NotificationCard.swift */; };
+		D56D10086AE315742DC09B54 /* BuzzSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA1DEA8B2FF2DF513116585 /* BuzzSamples.swift */; };
+		D57C4EFAB1CE11BF83F7EA17 /* NotificationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8095EC15C38A09F54C9CC /* NotificationStack.swift */; };
+		DEEBDAF0B8C0A0DAD28C8B67 /* BuzzStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E56F98215D63CD0659400 /* BuzzStore.swift */; };
+		E40F039B3B377CE1FD772FA9 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958E0F6E0937081E52999C75 /* Icons.xcassets */; };
+		E7EA0AABC3F200091ADDC43A /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E8A5BE7635B0CF113739EE /* Icon.swift */; };
+		EBE1C95B7FFC2A6F8CFF4F04 /* BuzzLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A3A9308679AE3B188758A7 /* BuzzLiveActivity.swift */; };
+		EEFE48D22D4DF5B5A83770D2 /* ActivityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3DA6BAEA89DD02CCFFA16 /* ActivityMonitor.swift */; };
+		F1F0795C7F124994D86F260D /* PushCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC20EA6001F5B0B7786F53 /* PushCard.swift */; };
+		F27F16B131427DC962EBC5D2 /* TimelineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E306253903FA0A0A622C6E8 /* TimelineModel.swift */; };
+		F30EA4C169223BD5711A1BBE /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E8A5BE7635B0CF113739EE /* Icon.swift */; };
+		F34F275CBD22934082313C65 /* StatusIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A39AA821544698652ADBC /* StatusIndicators.swift */; };
+		F389122C6964BF6895FD22C7 /* OpenRunde-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEDC5D4E6E1C5BC0B030B29E /* OpenRunde-Medium.otf */; };
+		F3C0793E6CCE53F325074A54 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38DDFD86E242D3DAB7D561 /* Theme.swift */; };
+		F40FE829A8E9D3949F613F18 /* EndpointField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07B1CB646F880BAB1878FA /* EndpointField.swift */; };
+		F562EA1C108FF5B250521752 /* SampleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588A6A52EAFE554EB3050BA5 /* SampleNotification.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42272D6AE6D45F798F703786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 610F481786496920D63BED35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDCCD9DD4F9DDF132E8925A5;
+			remoteInfo = Buzz;
+		};
+		881D75CE55018F20459D2B7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 610F481786496920D63BED35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3451D93E7065F112F721F98C;
+			remoteInfo = BuzzNotificationService;
+		};
+		8AD88786E99B0B052AC0B1A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 610F481786496920D63BED35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD8F1EBD45E8D846B0D8A0A5;
+			remoteInfo = BuzzWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27AF33D05CE9591B63FBCE30 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A78EB0A8E6B00F5FCCECD4B1 /* BuzzWidget.appex in Embed Foundation Extensions */,
+				5F020352957EB4B6D3313187 /* BuzzNotificationService.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00527D3F9977C9FEEE1AF45A /* AvatarStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarStore.swift; sourceTree = "<group>"; };
+		02CC20EA6001F5B0B7786F53 /* PushCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushCard.swift; sourceTree = "<group>"; };
+		0A38DDFD86E242D3DAB7D561 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		0F3FCAE4D6969B796DBAC0BD /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		104B2F3216333FF1507F570C /* EndpointSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointSheet.swift; sourceTree = "<group>"; };
+		1168EB78919D67B3E63C6FDA /* OpenRunde-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenRunde-Regular.otf"; sourceTree = "<group>"; };
+		1AEFD2683F86888B94EF910E /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		1FD6403C7734C8E9D612427C /* BuzzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzApp.swift; sourceTree = "<group>"; };
+		28DFFD9DB707B897640983BD /* ConnectionIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionIssue.swift; sourceTree = "<group>"; };
+		2B9A5D05D463DC39C9C82554 /* StageNotice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageNotice.swift; sourceTree = "<group>"; };
+		332D908E59BA2AEE8B5EDD13 /* Agents.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Agents.xcassets; sourceTree = "<group>"; };
+		3E306253903FA0A0A622C6E8 /* TimelineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineModel.swift; sourceTree = "<group>"; };
+		3F098DE49A31D539CDD6A3CC /* TimelineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCard.swift; sourceTree = "<group>"; };
+		401E56F98215D63CD0659400 /* BuzzStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzStore.swift; sourceTree = "<group>"; };
+		48BF05B08F542B190E1FF845 /* Unchecked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unchecked.swift; sourceTree = "<group>"; };
+		4A07B1CB646F880BAB1878FA /* EndpointField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointField.swift; sourceTree = "<group>"; };
+		51643D6B3B472A9249B18FBF /* AgentLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentLabel.swift; sourceTree = "<group>"; };
+		51DB7F509DFCFD723A48442A /* ActivityBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBinder.swift; sourceTree = "<group>"; };
+		53F24BEE4DDF2E91226F8DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5455F59A24A3F614E3A376D0 /* PairingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingModel.swift; sourceTree = "<group>"; };
+		588A6A52EAFE554EB3050BA5 /* SampleNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNotification.swift; sourceTree = "<group>"; };
+		62CB14549F4FF95ABFC17028 /* LiveDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDot.swift; sourceTree = "<group>"; };
+		6538DF7EEBCBD95E726D0313 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		68465035E7AF9F8154BC5B55 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		6AA1DEA8B2FF2DF513116585 /* BuzzSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzSamples.swift; sourceTree = "<group>"; };
+		6BE3801A0E8ACAA66BD1A02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6F8A39AA821544698652ADBC /* StatusIndicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusIndicators.swift; sourceTree = "<group>"; };
+		70EE46C1C84A1FBB93C86A88 /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
+		72E4DE55E189CE2A5D64A430 /* ScreenPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPreviewView.swift; sourceTree = "<group>"; };
+		7A1E446FDEB4E56F43B09BD5 /* BuzzWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BuzzWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		82469D42AAD1141A22F4E2B6 /* BuzzUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		831854AC4A3B217C2BBE90C7 /* TimelineFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineFeed.swift; sourceTree = "<group>"; };
+		842B95A162682756EA3DB48E /* ActivityPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPreviewView.swift; sourceTree = "<group>"; };
+		86838E03D3ED08F344C47CC6 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		8A524D2314A8DF7801F7B0B1 /* BuzzKit-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "BuzzKit-iOS"; path = "../BuzzKit-iOS"; sourceTree = SOURCE_ROOT; };
+		906809AE5FE3E000E0699C88 /* NotificationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCard.swift; sourceTree = "<group>"; };
+		917B7C535516E73EEC33254C /* PingEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingEnvironment.swift; sourceTree = "<group>"; };
+		91AF4D7D3DA7562B1BD5B4BE /* Buzz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Buzz.entitlements; sourceTree = "<group>"; };
+		958E0F6E0937081E52999C75 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		976E62D69878CF11B15153E1 /* AgentAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAvatar.swift; sourceTree = "<group>"; };
+		9EFEE128E811F90908D752B5 /* PingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingClient.swift; sourceTree = "<group>"; };
+		A0B3DA6BAEA89DD02CCFFA16 /* ActivityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMonitor.swift; sourceTree = "<group>"; };
+		A59037EDAD3011396C5B424C /* Buzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0CC676029242ACDE68B472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AE59CCF6074D8EE34B90FAF8 /* MobileLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileLayoutTests.swift; sourceTree = "<group>"; };
+		B1977FE3C0458F5AD80DB9E2 /* CodeDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDigits.swift; sourceTree = "<group>"; };
+		C041EE1C7DF1379AED2310F5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C7D0F841AABEA3F80702F571 /* BuzzNotificationService.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BuzzNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE5CA261F9A5F15A1EA5DAD /* BuzzActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzActivityAttributes.swift; sourceTree = "<group>"; };
+		D05B839A5195545B1EDE8DBF /* TimelineEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineEvent.swift; sourceTree = "<group>"; };
+		D28081450B72674B657873F2 /* BuzzWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzWidgetBundle.swift; sourceTree = "<group>"; };
+		DA97334460B24737F1F62FA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEDC5D4E6E1C5BC0B030B29E /* OpenRunde-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenRunde-Medium.otf"; sourceTree = "<group>"; };
+		E0C8095EC15C38A09F54C9CC /* NotificationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStack.swift; sourceTree = "<group>"; };
+		E1B1959B26A3E4727E8BB234 /* BuzzNotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BuzzNotificationService.entitlements; sourceTree = "<group>"; };
+		EBB8FBD390CAA3D98A4326E2 /* BuzzWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BuzzWidget.entitlements; sourceTree = "<group>"; };
+		F26B30C5638A5C721166AC9B /* AppSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSheet.swift; sourceTree = "<group>"; };
+		F398F64E63B10E134C93B3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F6A3A9308679AE3B188758A7 /* BuzzLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzLiveActivity.swift; sourceTree = "<group>"; };
+		F7D784EC03128BAF35539DFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9E8A5BE7635B0CF113739EE /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		FBFBBEEDC1A89CCE56D589F7 /* OpenRunde-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenRunde-Semibold.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18BBFFDA77C714F9763A3AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A59C446FA1658EAFAA11CD3 /* BezelKit in Frameworks */,
+				4F5D493B326DD15343EEFFFD /* BuzzKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679E213DC9CABE0AA6A7859D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AF1B8E652E8EBCAB674604 /* BuzzKitNotificationServiceExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EE1C824CED27426E1C41085 /* Buzz */ = {
+			isa = PBXGroup;
+			children = (
+				1FD6403C7734C8E9D612427C /* BuzzApp.swift */,
+				DA97334460B24737F1F62FA1 /* ContentView.swift */,
+				7DE5252C56F2F609EAE72F93 /* Models */,
+				38BB674FFF2C8842139D41F8 /* Resources */,
+				9491263AAE061C9FCF270871 /* Services */,
+				EE4C5F0F0E09F8DBA992D21E /* UI */,
+				3C9A791BF567B2D45B778805 /* Views */,
+			);
+			path = Buzz;
+			sourceTree = "<group>";
+		};
+		2EE64672B22B79269A9FB1D0 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				842B95A162682756EA3DB48E /* ActivityPreviewView.swift */,
+				72E4DE55E189CE2A5D64A430 /* ScreenPreviewView.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		38BB674FFF2C8842139D41F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7D784EC03128BAF35539DFB /* Assets.xcassets */,
+				91AF4D7D3DA7562B1BD5B4BE /* Buzz.entitlements */,
+				F398F64E63B10E134C93B3C1 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3980525E36DA9B779F03F071 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5CA261F9A5F15A1EA5DAD /* BuzzActivityAttributes.swift */,
+				6AA1DEA8B2FF2DF513116585 /* BuzzSamples.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		3C9A791BF567B2D45B778805 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EE64672B22B79269A9FB1D0 /* Debug */,
+				FEC4C4A6DC8EF281624C4400 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		555A7CA33B5CDC9E68EC9428 /* BuzzNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				E1B1959B26A3E4727E8BB234 /* BuzzNotificationService.entitlements */,
+				53F24BEE4DDF2E91226F8DEC /* Info.plist */,
+				6538DF7EEBCBD95E726D0313 /* NotificationService.swift */,
+			);
+			path = BuzzNotificationService;
+			sourceTree = "<group>";
+		};
+		61665EBD66344E35605FE0A9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3980525E36DA9B779F03F071 /* Activity */,
+				FF34C0E8354F5DC709E104EA /* Networking */,
+				C2E14E2E729F300B2332C0F4 /* Resources */,
+				994A64997BF7472A277A230E /* Support */,
+				ADB9B239C965E5EC2C0DE0D5 /* UI */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6A3F05CC83FDC1FC46780DF1 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				51DB7F509DFCFD723A48442A /* ActivityBinder.swift */,
+				A0B3DA6BAEA89DD02CCFFA16 /* ActivityMonitor.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		758B8D942B99CFDC9CA3C873 /* BuzzWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F6A3A9308679AE3B188758A7 /* BuzzLiveActivity.swift */,
+				EBB8FBD390CAA3D98A4326E2 /* BuzzWidget.entitlements */,
+				D28081450B72674B657873F2 /* BuzzWidgetBundle.swift */,
+				AA0CC676029242ACDE68B472 /* Info.plist */,
+			);
+			path = BuzzWidget;
+			sourceTree = "<group>";
+		};
+		7DE5252C56F2F609EAE72F93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				588A6A52EAFE554EB3050BA5 /* SampleNotification.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84ACC2F51B9AB215510170B7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DEDC5D4E6E1C5BC0B030B29E /* OpenRunde-Medium.otf */,
+				1168EB78919D67B3E63C6FDA /* OpenRunde-Regular.otf */,
+				FBFBBEEDC1A89CCE56D589F7 /* OpenRunde-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		864BE474F09F040E899AB82A /* Pairing */ = {
+			isa = PBXGroup;
+			children = (
+				28DFFD9DB707B897640983BD /* ConnectionIssue.swift */,
+				5455F59A24A3F614E3A376D0 /* PairingModel.swift */,
+			);
+			path = Pairing;
+			sourceTree = "<group>";
+		};
+		89D5AE67FF7423127EAB5BA7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				976E62D69878CF11B15153E1 /* AgentAvatar.swift */,
+				F9E8A5BE7635B0CF113739EE /* Icon.swift */,
+				70EE46C1C84A1FBB93C86A88 /* LockScreenView.swift */,
+				6F8A39AA821544698652ADBC /* StatusIndicators.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8CE557C7C495CB7F7B9548D0 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				3E306253903FA0A0A622C6E8 /* TimelineModel.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		9491263AAE061C9FCF270871 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6A3F05CC83FDC1FC46780DF1 /* Activities */,
+				864BE474F09F040E899AB82A /* Pairing */,
+				8CE557C7C495CB7F7B9548D0 /* Timeline */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		994A64997BF7472A277A230E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				48BF05B08F542B190E1FF845 /* Unchecked.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		ADB9B239C965E5EC2C0DE0D5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				89D5AE67FF7423127EAB5BA7 /* Components */,
+				B83A1459553498EFBE082367 /* Theme */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B83A1459553498EFBE082367 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				0A38DDFD86E242D3DAB7D561 /* Theme.swift */,
+				1AEFD2683F86888B94EF910E /* Typography.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		C2E14E2E729F300B2332C0F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				332D908E59BA2AEE8B5EDD13 /* Agents.xcassets */,
+				958E0F6E0937081E52999C75 /* Icons.xcassets */,
+				84ACC2F51B9AB215510170B7 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D7FED3B8F1391EFFF50CA5D5 = {
+			isa = PBXGroup;
+			children = (
+				1EE1C824CED27426E1C41085 /* Buzz */,
+				555A7CA33B5CDC9E68EC9428 /* BuzzNotificationService */,
+				F242BB1BE81CB8BFFA36DA75 /* BuzzUITests */,
+				758B8D942B99CFDC9CA3C873 /* BuzzWidget */,
+				FCBEA983144F65A6EA85723C /* Packages */,
+				61665EBD66344E35605FE0A9 /* Shared */,
+				FCC15758779F0044E4F91149 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE4C5F0F0E09F8DBA992D21E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FBFCC5A255FCA7848C1CFB1E /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F242BB1BE81CB8BFFA36DA75 /* BuzzUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BE3801A0E8ACAA66BD1A02B /* Info.plist */,
+				AE59CCF6074D8EE34B90FAF8 /* MobileLayoutTests.swift */,
+			);
+			path = BuzzUITests;
+			sourceTree = "<group>";
+		};
+		FBFCC5A255FCA7848C1CFB1E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0F3FCAE4D6969B796DBAC0BD /* AppButton.swift */,
+				F26B30C5638A5C721166AC9B /* AppSheet.swift */,
+				B1977FE3C0458F5AD80DB9E2 /* CodeDigits.swift */,
+				4A07B1CB646F880BAB1878FA /* EndpointField.swift */,
+				62CB14549F4FF95ABFC17028 /* LiveDot.swift */,
+				906809AE5FE3E000E0699C88 /* NotificationCard.swift */,
+				E0C8095EC15C38A09F54C9CC /* NotificationStack.swift */,
+				02CC20EA6001F5B0B7786F53 /* PushCard.swift */,
+				68465035E7AF9F8154BC5B55 /* Spinner.swift */,
+				86838E03D3ED08F344C47CC6 /* Stage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FCBEA983144F65A6EA85723C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				8A524D2314A8DF7801F7B0B1 /* BuzzKit-iOS */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		FCC15758779F0044E4F91149 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A59037EDAD3011396C5B424C /* Buzz.app */,
+				C7D0F841AABEA3F80702F571 /* BuzzNotificationService.appex */,
+				82469D42AAD1141A22F4E2B6 /* BuzzUITests.xctest */,
+				7A1E446FDEB4E56F43B09BD5 /* BuzzWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEC4C4A6DC8EF281624C4400 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				104B2F3216333FF1507F570C /* EndpointSheet.swift */,
+				C041EE1C7DF1379AED2310F5 /* HomeView.swift */,
+				2B9A5D05D463DC39C9C82554 /* StageNotice.swift */,
+				3F098DE49A31D539CDD6A3CC /* TimelineCard.swift */,
+				831854AC4A3B217C2BBE90C7 /* TimelineFeed.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF34C0E8354F5DC709E104EA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				51643D6B3B472A9249B18FBF /* AgentLabel.swift */,
+				00527D3F9977C9FEEE1AF45A /* AvatarStore.swift */,
+				401E56F98215D63CD0659400 /* BuzzStore.swift */,
+				9EFEE128E811F90908D752B5 /* PingClient.swift */,
+				917B7C535516E73EEC33254C /* PingEnvironment.swift */,
+				D05B839A5195545B1EDE8DBF /* TimelineEvent.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3451D93E7065F112F721F98C /* BuzzNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2780A7367A4B6C5EFB133489 /* Build configuration list for PBXNativeTarget "BuzzNotificationService" */;
+			buildPhases = (
+				58CAAFC5827DF649F9C89F50 /* Sources */,
+				E8D74A5F910B7CA7C4ACF8D0 /* Resources */,
+				679E213DC9CABE0AA6A7859D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuzzNotificationService;
+			packageProductDependencies = (
+				0710995FC34B438EF06BFE0E /* BuzzKitNotificationServiceExtension */,
+			);
+			productName = BuzzNotificationService;
+			productReference = C7D0F841AABEA3F80702F571 /* BuzzNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A890DD35B4F49B64F66F7CBD /* BuzzUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED54588CCDA02A4399EE9E81 /* Build configuration list for PBXNativeTarget "BuzzUITests" */;
+			buildPhases = (
+				35834FA34BD40AE8A99E9143 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0F9AA3D484796E1EBB0D003 /* PBXTargetDependency */,
+			);
+			name = BuzzUITests;
+			packageProductDependencies = (
+			);
+			productName = BuzzUITests;
+			productReference = 82469D42AAD1141A22F4E2B6 /* BuzzUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DD8F1EBD45E8D846B0D8A0A5 /* BuzzWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF55381EF81588CCACA1EC72 /* Build configuration list for PBXNativeTarget "BuzzWidget" */;
+			buildPhases = (
+				CF2D395540CA42A48BECA51B /* Sources */,
+				B9B9AD6031AE5503809F21F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuzzWidget;
+			packageProductDependencies = (
+			);
+			productName = BuzzWidget;
+			productReference = 7A1E446FDEB4E56F43B09BD5 /* BuzzWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FDCCD9DD4F9DDF132E8925A5 /* Buzz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AA5BFB4C334CC32C8E49C84 /* Build configuration list for PBXNativeTarget "Buzz" */;
+			buildPhases = (
+				D1A96BC91959224ADDF0C96A /* Sources */,
+				6E70DABCA50BA22EF7649DE9 /* Resources */,
+				18BBFFDA77C714F9763A3AA4 /* Frameworks */,
+				27AF33D05CE9591B63FBCE30 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFAF8CE952AE7E13AED5D638 /* PBXTargetDependency */,
+				DFA58F11660D660D35758D24 /* PBXTargetDependency */,
+			);
+			name = Buzz;
+			packageProductDependencies = (
+				2CCCFEEA7114D516622AC3A0 /* BezelKit */,
+				764D6F50A5870A9BD8CAC591 /* BuzzKit */,
+			);
+			productName = Buzz;
+			productReference = A59037EDAD3011396C5B424C /* Buzz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		610F481786496920D63BED35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3451D93E7065F112F721F98C = {
+						DevelopmentTeam = 5DL44U5BHU;
+						ProvisioningStyle = Automatic;
+					};
+					A890DD35B4F49B64F66F7CBD = {
+						DevelopmentTeam = 5DL44U5BHU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FDCCD9DD4F9DDF132E8925A5;
+					};
+					DD8F1EBD45E8D846B0D8A0A5 = {
+						DevelopmentTeam = 5DL44U5BHU;
+						ProvisioningStyle = Automatic;
+					};
+					FDCCD9DD4F9DDF132E8925A5 = {
+						DevelopmentTeam = 5DL44U5BHU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C1998731B8768653B3689822 /* Build configuration list for PBXProject "Buzz" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D7FED3B8F1391EFFF50CA5D5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5A3698916EE97D857FD1B6B1 /* XCRemoteSwiftPackageReference "BezelKit" */,
+				317C5E8DAB6D18BACC2D3719 /* XCLocalSwiftPackageReference "../BuzzKit-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FCC15758779F0044E4F91149 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDCCD9DD4F9DDF132E8925A5 /* Buzz */,
+				3451D93E7065F112F721F98C /* BuzzNotificationService */,
+				A890DD35B4F49B64F66F7CBD /* BuzzUITests */,
+				DD8F1EBD45E8D846B0D8A0A5 /* BuzzWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E70DABCA50BA22EF7649DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0616D50066B55D8F627CB7B4 /* Agents.xcassets in Resources */,
+				32AE1D313FFA93F7DE431F45 /* Assets.xcassets in Resources */,
+				E40F039B3B377CE1FD772FA9 /* Icons.xcassets in Resources */,
+				F389122C6964BF6895FD22C7 /* OpenRunde-Medium.otf in Resources */,
+				77D5C5DC264F16ADC3C07084 /* OpenRunde-Regular.otf in Resources */,
+				8A8D403626C1B1BA5576C6F4 /* OpenRunde-Semibold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B9AD6031AE5503809F21F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F329655FBD6BE32A7BC2B0E /* Agents.xcassets in Resources */,
+				138C6110368542354A21902E /* Icons.xcassets in Resources */,
+				51BFE0809CDE992EBE5A0131 /* OpenRunde-Medium.otf in Resources */,
+				0AA9C7EF4B9209A25187BBF2 /* OpenRunde-Regular.otf in Resources */,
+				3621CE620D6D492508E79F8E /* OpenRunde-Semibold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D74A5F910B7CA7C4ACF8D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31655EDF6E65E522A3AB8A51 /* Agents.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35834FA34BD40AE8A99E9143 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F7B4E62F3114ED1A20FD8C /* MobileLayoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58CAAFC5827DF649F9C89F50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96C39A0E79B61C12179FCA8 /* AgentLabel.swift in Sources */,
+				562CC4C314BDEFCDA947C143 /* AvatarStore.swift in Sources */,
+				A851CDBE12320EEB18EF4809 /* BuzzStore.swift in Sources */,
+				28D44208EA7DEFC492AF0785 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2D395540CA42A48BECA51B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D5E7AD04734E74A96F85D2 /* AgentAvatar.swift in Sources */,
+				0176DC93FF9D21FECD032602 /* AgentLabel.swift in Sources */,
+				0587DE962C2561457C97B866 /* AvatarStore.swift in Sources */,
+				A3ACE73D90C9C9454CF5839E /* BuzzActivityAttributes.swift in Sources */,
+				EBE1C95B7FFC2A6F8CFF4F04 /* BuzzLiveActivity.swift in Sources */,
+				1DC726324FE01D7A295D4CE0 /* BuzzSamples.swift in Sources */,
+				8C1F2D708EBD8F266A389B72 /* BuzzStore.swift in Sources */,
+				60C94E979403B862C0A3C2AD /* BuzzWidgetBundle.swift in Sources */,
+				F30EA4C169223BD5711A1BBE /* Icon.swift in Sources */,
+				5C41A36722748E135426321E /* LockScreenView.swift in Sources */,
+				8BF5227F0426E537E654279A /* PingClient.swift in Sources */,
+				8B122BDC4977FF557C1CF01B /* PingEnvironment.swift in Sources */,
+				F34F275CBD22934082313C65 /* StatusIndicators.swift in Sources */,
+				812302EA04D47DAA7224FCA2 /* Theme.swift in Sources */,
+				B33A68058CB64D76F153F84A /* TimelineEvent.swift in Sources */,
+				47EFB18291F1819BBCA5EC8C /* Typography.swift in Sources */,
+				954EEAED03F6FAF7923CFDAE /* Unchecked.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A96BC91959224ADDF0C96A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BF269FC209A3F5F3CC48AD /* ActivityBinder.swift in Sources */,
+				EEFE48D22D4DF5B5A83770D2 /* ActivityMonitor.swift in Sources */,
+				62C87A19136221D4EC25008C /* ActivityPreviewView.swift in Sources */,
+				00981C2C08B4BFE5F7F3F2EF /* AgentAvatar.swift in Sources */,
+				3912BCD08CF3F02CF264DBE4 /* AgentLabel.swift in Sources */,
+				9062A7E72992E22A1FCC533E /* AppButton.swift in Sources */,
+				49A52C73B1269736C915D059 /* AppSheet.swift in Sources */,
+				C71168A4749B1C25DFFEA281 /* AvatarStore.swift in Sources */,
+				BDFE5E41B520D18578A70B79 /* BuzzActivityAttributes.swift in Sources */,
+				363FB187B3DF4CB5B25EB570 /* BuzzApp.swift in Sources */,
+				D56D10086AE315742DC09B54 /* BuzzSamples.swift in Sources */,
+				DEEBDAF0B8C0A0DAD28C8B67 /* BuzzStore.swift in Sources */,
+				83EC2FA8BDC57F2190CA9F0F /* CodeDigits.swift in Sources */,
+				40F88B33D523EA7D2A61BA98 /* ConnectionIssue.swift in Sources */,
+				B4A13A70AB7339E02D10C88E /* ContentView.swift in Sources */,
+				F40FE829A8E9D3949F613F18 /* EndpointField.swift in Sources */,
+				43600817B6FAAB98EBB5C072 /* EndpointSheet.swift in Sources */,
+				AF25C9E13CC2A953BBDC3E0C /* HomeView.swift in Sources */,
+				E7EA0AABC3F200091ADDC43A /* Icon.swift in Sources */,
+				63C07FBF31646ED34FE57872 /* LiveDot.swift in Sources */,
+				96D50A7FAC88C90EA14BEA66 /* LockScreenView.swift in Sources */,
+				CCE17B3A0E02CBE98FED3B3F /* NotificationCard.swift in Sources */,
+				D57C4EFAB1CE11BF83F7EA17 /* NotificationStack.swift in Sources */,
+				7B6DF9E7E0F7AD736B7E57E9 /* PairingModel.swift in Sources */,
+				30482A0F2ADC5CB8E1130557 /* PingClient.swift in Sources */,
+				538454E361DACAB711D90EBE /* PingEnvironment.swift in Sources */,
+				F1F0795C7F124994D86F260D /* PushCard.swift in Sources */,
+				F562EA1C108FF5B250521752 /* SampleNotification.swift in Sources */,
+				BC135984E3B51E78A9C26394 /* ScreenPreviewView.swift in Sources */,
+				085B391635E10913168BB1D0 /* Spinner.swift in Sources */,
+				B9169B8097EE2CE2A83769A4 /* Stage.swift in Sources */,
+				5A2FF41EB518D21F33C3357E /* StageNotice.swift in Sources */,
+				B446F5E75B2F83B671EDD2BE /* StatusIndicators.swift in Sources */,
+				F3C0793E6CCE53F325074A54 /* Theme.swift in Sources */,
+				A351FA2A6AAA86AAD73D5382 /* TimelineCard.swift in Sources */,
+				02277D1CC3DF826F128681E8 /* TimelineEvent.swift in Sources */,
+				0CC8DFFE916F2624365C8024 /* TimelineFeed.swift in Sources */,
+				F27F16B131427DC962EBC5D2 /* TimelineModel.swift in Sources */,
+				83D6AC23680E40FEB27BBF4A /* Typography.swift in Sources */,
+				000D5BFD28BBA429F42376D9 /* Unchecked.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFA58F11660D660D35758D24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3451D93E7065F112F721F98C /* BuzzNotificationService */;
+			targetProxy = 881D75CE55018F20459D2B7F /* PBXContainerItemProxy */;
+		};
+		DFAF8CE952AE7E13AED5D638 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD8F1EBD45E8D846B0D8A0A5 /* BuzzWidget */;
+			targetProxy = 8AD88786E99B0B052AC0B1A7 /* PBXContainerItemProxy */;
+		};
+		F0F9AA3D484796E1EBB0D003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDCCD9DD4F9DDF132E8925A5 /* Buzz */;
+			targetProxy = 42272D6AE6D45F798F703786 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002EDD258C25F06D05B85D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuzzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = studio.overclock.buzz.uitests;
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = Buzz;
+			};
+			name = Release;
+		};
+		0FE3688565D7E0221E815E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BuzzNotificationService/BuzzNotificationService.entitlements;
+				INFOPLIST_FILE = BuzzNotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = studio.overclock.buzz.notificationservice;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19F38D3999CA1184CE45A37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5DL44U5BHU;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		32C72BBD1FF844B12F6B750F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5DL44U5BHU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		49C0CC316FD0BBE107C676D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BuzzNotificationService/BuzzNotificationService.entitlements;
+				INFOPLIST_FILE = BuzzNotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = studio.overclock.buzz.notificationservice;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		54C8BDAC7E606F0F858B2058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BuzzWidget/BuzzWidget.entitlements;
+				INFOPLIST_FILE = BuzzWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = studio.overclock.buzz.widget;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		57E2B1159FD0E8C3FFD5D1BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuzzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = studio.overclock.buzz.uitests;
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = Buzz;
+			};
+			name = Debug;
+		};
+		9BE624E49EC7E17A7A7D0E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Buzz/Resources/Buzz.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Buzz/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Buzz;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = studio.overclock.buzz;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DC44ED56E5D0942162566328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Buzz/Resources/Buzz.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Buzz/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Buzz;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = studio.overclock.buzz;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E358294C3D7872953F4B47E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BuzzWidget/BuzzWidget.entitlements;
+				INFOPLIST_FILE = BuzzWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = studio.overclock.buzz.widget;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2780A7367A4B6C5EFB133489 /* Build configuration list for PBXNativeTarget "BuzzNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE3688565D7E0221E815E64 /* Debug */,
+				49C0CC316FD0BBE107C676D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3AA5BFB4C334CC32C8E49C84 /* Build configuration list for PBXNativeTarget "Buzz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE624E49EC7E17A7A7D0E8E /* Debug */,
+				DC44ED56E5D0942162566328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AF55381EF81588CCACA1EC72 /* Build configuration list for PBXNativeTarget "BuzzWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E358294C3D7872953F4B47E0 /* Debug */,
+				54C8BDAC7E606F0F858B2058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C1998731B8768653B3689822 /* Build configuration list for PBXProject "Buzz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C72BBD1FF844B12F6B750F /* Debug */,
+				19F38D3999CA1184CE45A37A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ED54588CCDA02A4399EE9E81 /* Build configuration list for PBXNativeTarget "BuzzUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57E2B1159FD0E8C3FFD5D1BC /* Debug */,
+				002EDD258C25F06D05B85D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		317C5E8DAB6D18BACC2D3719 /* XCLocalSwiftPackageReference "../BuzzKit-iOS" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../BuzzKit-iOS";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A3698916EE97D857FD1B6B1 /* XCRemoteSwiftPackageReference "BezelKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markbattistella/BezelKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0710995FC34B438EF06BFE0E /* BuzzKitNotificationServiceExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BuzzKitNotificationServiceExtension;
+		};
+		2CCCFEEA7114D516622AC3A0 /* BezelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A3698916EE97D857FD1B6B1 /* XCRemoteSwiftPackageReference "BezelKit" */;
+			productName = BezelKit;
+		};
+		764D6F50A5870A9BD8CAC591 /* BuzzKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BuzzKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 610F481786496920D63BED35 /* Project object */;
+}
