@@ -1,5 +1,5 @@
 {
-  "originHash" : "c03451fada920f6e281f8d64f652eab8f681e6b9e98674378609e07c0a12bc78",
+  "originHash" : "cebc660158067f7925523c4dde5cf8e2275d0cc2184eb99aea495f4f767f2516",
   "pins" : [
     {
       "identity" : "bezelkit",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "a2cb1548f6ae11f3d9b8f63c1b260c6cc75c62bb",
         "version" : "4.1.1"
+      }
+    },
+    {
+      "identity" : "buzzkit-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/buzzkit-dev/buzzkit-ios.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "710399e7e2ce4983d3151c4ca0353b28817d5348"
       }
     }
   ],

@@ -293,12 +293,21 @@ Prefix with `DEVELOPER_DIR=/Applications/Xcode-27.app` when `xcrun` resolves to 
 
 `Buzz.xcodeproj` is the source of truth and is committed: add files through Xcode (or edit
 `project.pbxproj` when working from the shell, and confirm the file appears in the target), and
-keep the team (`5DL44U5BHU`, automatic signing) set on every target. The local BuzzKit package
-is referenced at `../BuzzKit-iOS`. The version and build number live once, at the project level
+keep the team (`5DL44U5BHU`, automatic signing) set on every target. BuzzKit is the remote
+package `https://github.com/buzzkit-dev/buzzkit-ios.git` on `main` (Xcode Cloud cannot see a
+sibling directory); to develop against a local checkout, drag `../BuzzKit-iOS` into the project
+and Xcode overrides the remote with it (same package identity, `buzzkit-ios`), and drop it again
+before committing. The version and build number live once, at the project level
 (`MARKETING_VERSION`, `CURRENT_PROJECT_VERSION` in the Buzz project's Build Settings); every
 Info.plist reads them through `$(MARKETING_VERSION)` / `$(CURRENT_PROJECT_VERSION)`, so the app
 and both extensions always agree. Bump them on the project, never on one target, or App Store
 Connect rejects the upload for an extension version that does not match the app.
+
+Releases are Xcode Cloud archives built with the current release Xcode (the 27 betas cannot
+submit). `ci_scripts/ci_post_clone.sh` (the CruiseSignal script) sets `MARKETING_VERSION` from
+the `vX.Y.Z` tag that triggered the build, or from the highest tag on a branch build, and Xcode
+Cloud supplies the build number. Cut a release by pushing a tag; the number in the project is
+only a local default.
 
 Loading states use `Spinner` (the CruiseSignal ring: 30% track plus a quarter arc, 900ms per
 turn), never `ProgressView`. Inside `AppButton` the spinner takes the exact size of the icon slot

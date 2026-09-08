@@ -67,7 +67,9 @@ Requires Xcode 27.
 open Buzz.xcodeproj
 ```
 
-The project expects the [BuzzKit iOS SDK](https://github.com/buzzkit-dev/buzzkit-ios) checked out next to it at `../BuzzKit-iOS`; targets, entitlements and build settings live in the project itself.
+The [BuzzKit iOS SDK](https://github.com/buzzkit-dev/buzzkit-ios) is a remote Swift package; to work on both at once, drag a local checkout of it into the project and Xcode uses that copy instead. Targets, entitlements and build settings live in the project itself.
+
+Releases ship through Xcode Cloud: push a `vX.Y.Z` tag and `ci_scripts/ci_post_clone.sh` writes that version into the project before the archive.
 
 ```
 Buzz/                     The app: pairing, the timeline, the connect screen

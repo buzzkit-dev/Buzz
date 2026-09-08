@@ -162,7 +162,6 @@
 		831854AC4A3B217C2BBE90C7 /* TimelineFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineFeed.swift; sourceTree = "<group>"; };
 		842B95A162682756EA3DB48E /* ActivityPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPreviewView.swift; sourceTree = "<group>"; };
 		86838E03D3ED08F344C47CC6 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
-		8A524D2314A8DF7801F7B0B1 /* BuzzKit-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "BuzzKit-iOS"; path = "../BuzzKit-iOS"; sourceTree = SOURCE_ROOT; };
 		906809AE5FE3E000E0699C88 /* NotificationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCard.swift; sourceTree = "<group>"; };
 		917B7C535516E73EEC33254C /* PingEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingEnvironment.swift; sourceTree = "<group>"; };
 		91AF4D7D3DA7562B1BD5B4BE /* Buzz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Buzz.entitlements; sourceTree = "<group>"; };
@@ -448,7 +447,6 @@
 		FCBEA983144F65A6EA85723C /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				8A524D2314A8DF7801F7B0B1 /* BuzzKit-iOS */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -611,7 +609,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				5A3698916EE97D857FD1B6B1 /* XCRemoteSwiftPackageReference "BezelKit" */,
-				317C5E8DAB6D18BACC2D3719 /* XCLocalSwiftPackageReference "../BuzzKit-iOS" */,
+				317C5E8DAB6D18BACC2D3719 /* XCRemoteSwiftPackageReference "buzzkit-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FCC15758779F0044E4F91149 /* Products */;
@@ -1087,14 +1085,15 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		317C5E8DAB6D18BACC2D3719 /* XCLocalSwiftPackageReference "../BuzzKit-iOS" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../BuzzKit-iOS";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
+		317C5E8DAB6D18BACC2D3719 /* XCRemoteSwiftPackageReference "buzzkit-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/buzzkit-dev/buzzkit-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		5A3698916EE97D857FD1B6B1 /* XCRemoteSwiftPackageReference "BezelKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/markbattistella/BezelKit";
@@ -1108,6 +1107,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		0710995FC34B438EF06BFE0E /* BuzzKitNotificationServiceExtension */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 317C5E8DAB6D18BACC2D3719 /* XCRemoteSwiftPackageReference "buzzkit-ios" */;
 			productName = BuzzKitNotificationServiceExtension;
 		};
 		2CCCFEEA7114D516622AC3A0 /* BezelKit */ = {
@@ -1117,6 +1117,7 @@
 		};
 		764D6F50A5870A9BD8CAC591 /* BuzzKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 317C5E8DAB6D18BACC2D3719 /* XCRemoteSwiftPackageReference "buzzkit-ios" */;
 			productName = BuzzKit;
 		};
 /* End XCSwiftPackageProductDependency section */

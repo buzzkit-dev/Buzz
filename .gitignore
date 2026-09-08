@@ -8,3 +8,4 @@ xcuserdata/
 *.xcuserstate
 .swiftpm/
 Packages/
+build-cloud/
