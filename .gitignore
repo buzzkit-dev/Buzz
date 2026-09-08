@@ -9,3 +9,4 @@ xcuserdata/
 .swiftpm/
 Packages/
 build-cloud/
+.env.speedflight
