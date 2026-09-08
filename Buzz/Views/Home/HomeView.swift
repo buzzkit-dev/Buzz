@@ -21,7 +21,7 @@ struct HomeView: View {
             StatusPill(label: statusLabel, tint: statusTint, isActive: connectionIssue == nil && pairing.endpoint != nil)
             Spacer()
             Menu {
-              Button("View documentation", systemImage: "book") { openURL(URL(string: "https://buzzkit.dev/buzz")!) }
+              Button("About Buzz", systemImage: "info.circle") { openURL(URL(string: "https://buzzkit.dev/buzz")!) }
               Button("Show endpoint", systemImage: "link") { isShowingEndpoint = true }
                 .disabled(pairing.endpoint == nil)
               Button("Clear notifications", systemImage: "trash", role: .destructive) { isConfirmingClear = true }
