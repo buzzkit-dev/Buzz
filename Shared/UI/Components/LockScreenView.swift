@@ -87,6 +87,7 @@ public struct SessionRows: View {
                                 .typo(FontSize.xs)
                                 .foregroundStyle(Theme.inkForeground.opacity(0.55))
                                 .lineLimit(1)
+                                .contentTransition(.opacity)
                         }
                     }
                     Spacer(minLength: 8)
