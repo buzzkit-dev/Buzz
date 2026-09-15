@@ -39,6 +39,7 @@ public enum AgentLabel {
         "ollama": ("Ollama", "AgentOllama"),
         "amp": ("Amp", "AgentAmp"),
         "trae": ("Trae", "AgentTrae"),
+        "pi": ("Pi", "AgentPi"),
     ]
 
     private static let monogramColors: [UIColor] = [
